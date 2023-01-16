@@ -1,0 +1,197 @@
+<html>
+    <head>
+        <!-- <link href="./css/bundle.css" rel="stylesheet"> -->
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+        <link href="./js/slick/slick-theme.css" rel="stylesheet">
+
+        <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+        <link rel ="stylesheet" href ="./js/fontawesome-free-5.15.1/css/fontawesome.min.css"/>
+        <link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.css">
+    </head>
+<body>
+    aaa
+    <i class="fa fa-chevron-down"></i>
+    <div class="pic-item">
+        <div class="big-pic">
+          
+            
+            <div>
+                <div>
+                    <img class="img-big" src="./DS5000 ATX PC Case_files/tpc_20221116111651_1.jpg"  sytle="display: inline-block;">
+                </div>
+            </div>
+            <div>
+                <div>
+                    <img class="img-big" src="./DS5000 ATX PC Case_files/tpc_20221116111651_2.jpg" sytle="display: inline-block;">
+                  </div>
+            </div>
+            <div>
+                <div>
+                    <img class="img-big" src="./DS5000 ATX PC Case_files/tpc_20221116111652_3.jpg" sytle="display: inline-block;">
+                  </div>
+            </div>
+            <div>
+                <div>
+                    <img class="img-big" src="./DS5000 ATX PC Case_files/tpc_20221116111652_4.jpg" sytle="display: inline-block;">
+                  </div>
+            </div>
+            <div>
+                <div>
+                    <img class="img-big" src="./DS5000 ATX PC Case_files/tpc_20221117021508_0.jpg" sytle="display: inline-block;">
+                  </div>
+            </div>
+            <div>
+                <div>
+                    <img class="img-big" src="./DS5000 ATX PC Case_files/tpc_20221117021539_5.jpg" sytle="display: inline-block;">
+                  </div>
+            </div>
+            </div>
+            <div class="small-pic">
+         
+                    <div class="img-small">
+                        <div>
+                            <img class="img-responsive" src="./DS5000 ATX PC Case_files/tpc_20221117021508_0.jpg" sytle="display: inline-block;">
+                        </div>
+                    </div>
+                    <div class="img-small">
+                        <div>
+                            <img class="img-responsive" src="./DS5000 ATX PC Case_files/tpc_20221116111651_1.jpg"  sytle="display: inline-block;">
+                        </div>
+                    </div>
+                    <div class="img-small">
+                        <div>
+                            <img class="img-responsive" src="./DS5000 ATX PC Case_files/tpc_20221116111651_2.jpg" sytle="display: inline-block;">
+                          </div>
+                    </div>
+                    <div class="img-small">
+                        <div>
+                            <img class="img-responsive" src="./DS5000 ATX PC Case_files/tpc_20221116111652_3.jpg" sytle="display: inline-block;">
+                          </div>
+                    </div>
+                    <div class="img-small">
+                        <div>
+                            <img class="img-responsive" src="./DS5000 ATX PC Case_files/tpc_20221116111652_4.jpg" sytle="display: inline-block;">
+                          </div>
+                    </div>
+                
+                    <div class="img-small">
+                        <div>
+                            <img class="img-responsive" src="./DS5000 ATX PC Case_files/tpc_20221117021539_5.jpg" sytle="display: inline-block;">
+                          </div>
+                    </div>
+        
+                 
+            <!-- <div class="next">
+                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            </div> -->
+
+
+            </div>
+    </div>
+    
+
+</body>
+
+<i class="fas fa-chevron-down"></i>
+
+
+<style>
+    .small-pic .slick-prev:before {
+    font-family: "FontAwesome";
+    font-weight: 900;
+    content: "\f077";
+    color: red;
+    font-size: 18px;
+    top: 0%;
+}
+.small-pic .slick-next:before {
+    font-family: "FontAwesome";
+    font-weight: 900;
+    content: "\f078";
+    color: red;
+    font-size: 18px;
+    top: 99%;
+}
+.slick-prev{
+    top:0%;
+    left:30%;
+}
+.slick-next{
+    top:80%;
+    right:30%
+}
+.slick-list{
+    top:10px;
+}
+    .pic-item{
+        display: inline-block;
+        width:900px
+
+    }
+    .big-pic {
+        width:335px;
+        height:335px;
+        display: inline-block;
+        border-style: solid;
+        border-color: red;
+        border-width: 1px;
+    }
+    .small-pic {
+        top:10px;
+        position: absolute;
+        padding: 0px;
+        border-style: solid;
+        border-color: blue;
+        border-width: 1px;
+        width:65px;
+        height:335px;
+        
+        display: inline-block;
+
+    }
+
+    .img-big{
+        width:335px;
+        height:335px;
+    }
+    .img-responsive{
+        width:65px;
+        height:65px;
+        border-style: solid;
+        border-color: black;
+        border-width: 1px;
+    }
+    .img-small{
+        border-style: solid;
+        border-color: black;
+        border-width: 1px;
+    }
+</style>
+<script>
+    $('.big-pic').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: false,
+    fade: true,
+    asNavFor: '.small-pic'
+    });
+    $('.small-pic').slick({
+    slidesToShow: 2,
+    slideToScroll: 1,
+    asNavFor: '.big-pic',
+    dots: false,
+    centerMode: true,
+    focusOnSelect: true,
+    vertical:true,
+    arrows: true,
+    prevArrow: '<button class="slick-prev prev-arrow"></button>',
+    nextArrow: '<button class="slick-next next-arrow"></button>'
+//     prevArrow: $('.prev'),
+//    nextArrow: $('.next'),
+    
+    });
+</script>
+  
+</html>
